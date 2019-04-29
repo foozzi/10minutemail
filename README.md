@@ -21,3 +21,6 @@ Usage
 
 
 `python 10minutemail.py --save emails.txt`
+
+![save](https://raw.githubusercontent.com/m4ll0k/10minutemail/master/image_1.png)
+![text](https://raw.githubusercontent.com/m4ll0k/10minutemail/master/cat.png)
