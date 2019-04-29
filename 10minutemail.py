@@ -59,10 +59,10 @@ def main(path):
 				with open(email_ if path==None else path,'r+') as file:
 					data = file.read()
 					file.seek(0)
-					file.write('%s\nForm: %s\nSubject: %s\nDate: %s\nBody: %s\n'%("-"*50,form,subject,time.strftime("%H:%M:%S"),body))
+					file.write('%s\nFrom: %s\nSubject: %s\nDate: %s\nBody: %s\n'%("-"*50,form,subject,time.strftime("%H:%M:%S"),body))
 					file.truncate()
 			file = open('%s'%email_ if path == None else path,'w')
-			file.write('%s\nForm: %s\nSubject: %s\nDate: %s\nBody: %s\n'%("-"*50,form,subject,time.strftime("%H:%M:%S"),body))
+			file.write('%s\nFrom: %s\nSubject: %s\nDate: %s\nBody: %s\n'%("-"*50,form,subject,time.strftime("%H:%M:%S"),body))
 		# print subject one time
 		if subject not in subjects:
 			subjects.append(subject)
